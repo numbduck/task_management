@@ -11,6 +11,7 @@ const users = [
 - **Authentication**: Secure login and signup using JWT-based authentication.
 - **State Management**: Powered by Redux Toolkit for seamless state handling.
 - **UI/UX**: Responsive and intuitive design using Mantine and Tailwind CSS.
+- **Form**: React Hook Form used to capture form data and validations.
 - **Local Storage**: Persistent authentication using local storage.
 
 ## Tech Stack
