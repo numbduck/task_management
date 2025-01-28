@@ -11,8 +11,8 @@ function CreateTaskPopup() {
         defaultValues: {
             task_title: "",
             task_description: "",
-            due_date: null,
-            task_priority: null
+            due_date: '',
+            task_priority: ''
         }
     });
     const popup = useSelector((state) => state.modal.createTaskPopup);
@@ -28,7 +28,7 @@ function CreateTaskPopup() {
     const onSubmit = (data) => {
         // console.log(data, "form data")
         const newData = { ...data, id: Date.now() }
-        const newEditData = { ...data, id: popup?.helperData?.id }
+        // const newEditData = { ...data, id: popup?.helperData?.id }
         if (popup?.helperData?.type === 'edit') {
             dispatch(updateTask({ id: popup?.helperData?.id, updatedData: data }))
         } else {
@@ -86,7 +86,6 @@ function CreateTaskPopup() {
                                         placeholder="Enter task title"
                                         error={errors?.task_title?.message}
                                         label='Task Title'
-                                        defaultValue=""
                                         classNames={{
                                             input:
                                                 "!rounded-md md:!h-[3rem] placeholder:!text-placeholder !text-base !text-primary-login",
@@ -106,7 +105,6 @@ function CreateTaskPopup() {
                                         // withAsterisk
                                         placeholder="Enter task description"
                                         label='Task Description'
-                                        defaultValue=""
                                         classNames={{
                                             input:
                                                 "!rounded-md md:!h-[3rem] placeholder:!text-placeholder !text-base !text-primary-login",
@@ -125,7 +123,6 @@ function CreateTaskPopup() {
                                         placeholder="Choose Priority"
                                         data={['High', 'Medium', 'Low']}
                                         label='Priority'
-                                        defaultValue=""
                                         classNames={{
                                             input:
                                                 "!rounded-md md:!h-[3rem] placeholder:!text-placeholder !text-base !text-primary-login",
