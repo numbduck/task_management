@@ -1,4 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+A feature-rich task management application built with **Next.js**, **Mantine**, **Tailwind CSS**, and **Redux Toolkit**. It includes CRUD operations and basic JWT authentication using **local storage**.
+
+const users = [
+    { id: 1, username: "user1", password: "password1" },
+    { id: 2, username: "user2", password: "password2" },
+];
+
+## Features
+
+- **Task Management**: Create, read, update, and delete tasks effortlessly.
+- **Authentication**: Secure login and signup using JWT-based authentication.
+- **State Management**: Powered by Redux Toolkit for seamless state handling.
+- **UI/UX**: Responsive and intuitive design using Mantine and Tailwind CSS.
+- **Local Storage**: Persistent authentication using local storage.
+
+## Tech Stack
+
+- **Framework**: [Next.js](https://nextjs.org/)
+- **UI Library**: [Mantine](https://mantine.dev/)
+- **CSS Framework**: [Tailwind CSS](https://tailwindcss.com/)
+- **State Management**: [Redux Toolkit](https://redux-toolkit.js.org/)
+- **Authentication**: JWT with local storage
 
 ## Getting Started
 
